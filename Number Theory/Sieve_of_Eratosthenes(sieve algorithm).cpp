@@ -28,3 +28,5 @@ int main()
     }
     return 0;
 }
+//time complexity O(Nlog(log(N)))
+//proved using higher mathematics(taylor series..)
