@@ -5,7 +5,7 @@ int main() {
     cin >> n;
     vector<int> prime_factor;
   //if a number is a composite number
-    for (int i = 2; i <= sqrt(n) + 1; i++) {
+    for (int i = 2; i <= sqrt(n) ; i++) {
         while (n % i == 0) {
             prime_factor.push_back(i);
             n /= i;
