@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<isotream>
 using namespace std;
 int main(){
     int a=4;
