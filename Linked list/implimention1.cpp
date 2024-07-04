@@ -1,64 +1,24 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 class Node
 {
 public:
     int data;
-    Node*next;
-    //constructor
-    Node(int data)
+    Node *next;
+
+public:
+    Node(int data1)
     {
-        this->data=data;
-        next=NULL;
+        data = data1;
+        next = nullptr;
     }
 };
-//& we are using pass by reference because
-//we dont have to make a copy
-//we have to do it in the original node
-void insertathead(Node* &head,int value)
-{
-    Node *new_node= new Node(value);
-    new_node->next=head;
-    head=new_node;
-}
-void display(Node* &head)
-{
-    Node* temp=head;
-    while(temp!=NULL)
-    {
-        cout<<temp->data<<"->";
-        temp=temp->next;
-    }
-    cout<<"NULL"<<"\n";
-}
-int main()
-{
-    Node* head=NULL;
-    while(1)
-    {
-        cout<<"-----Menu------\n";
-        cout<<"1)Insert Data in the linked list\n";
-        cout<<"2)Display the linked list\n";
-        cout<<"3)Exit\n";
-        int choice;
-        cout<<("Enter your choice: ");
-        cin>>choice;
-        if(choice==1)
-        {
-            int value;
-            cout<<("Enter the value: ");
-            cin>>value;
-            insertathead(head,value);
-        }
-        if(choice==2)
-        {
-            cout<<("Your linked list look like this \n ");
-            display(head);
-        }
-        if(choice==3)
-        {
-            break;
-        }
-    }
+int main(){
+    Node *head = new Node(10);
+    Node *temp1 = new Node(20);
+    Node *temp2 = new Node(30);
+    head->next = temp1;
+    temp1->next = temp2;
+    cout << head->data << " " << head->next->data << " " << head->next->next->data << endl;
     return 0;
 }
