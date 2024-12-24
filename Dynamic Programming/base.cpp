@@ -20,7 +20,7 @@
 #define cntsetbit(mask) __builtin_popcountll(mask)
 #define checkbit(mask, bit) ((mask >> bit) & 1ll)
 #define onbit(mask, bit) ((mask) | (1LL << (bit)))
-#define offbit(mask, bit) ((mask) & ~(1LL << (bit)))s
+#define offbit(mask, bit) ((mask) & ~(1LL << (bit)))
 #define changebit(mask, bit) ((mask) ^ (1LL << bit))
 const int Mod=1e9+7;
 using namespace std;
@@ -30,7 +30,7 @@ int power(int a, int b, int mod=Mod)
     int res = 1;
     while (b > 0)
     {
-        if (b & 1)res = (res * a) % mod;
+        if (b & 1) res = (res * a) % mod;
         a = (a * a) % mod;
         b = b >> 1;
     }
@@ -56,7 +56,7 @@ int mod_sub(int a, int b, int m=Mod)
 }
 void solve()
 {
-    cout<<"Hello world"<<endl;
+    
 }
 
 signed main()
