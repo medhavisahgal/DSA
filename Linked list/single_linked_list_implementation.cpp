@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
 using namespace std; // Defining the structure of a node
 class Node
 {
