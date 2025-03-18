@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <tuple>
 #define int long long
 #define pb push_back
 #define mp make_pair
