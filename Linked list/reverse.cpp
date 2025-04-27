@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
 using namespace std;
 class Node
 {
@@ -39,16 +40,16 @@ Node *reverse(Node *head)
 }
 int main()
 {
-    cout<<"Enter the number of elements in the linked list: ";
+    cout << "Enter the number of elements in the linked list: ";
     int n;
-    cin>>n;
-    cout<<"Enter the elements of the linked list: ";
+    cin >> n;
+    cout << "Enter the elements of the linked list: ";
     Node *head = nullptr;
     Node *temp = nullptr;
     for (int i = 0; i < n; i++)
     {
         int data;
-        cin>>data;
+        cin >> data;
         if (i == 0)
         {
             head = new Node(data);
@@ -60,10 +61,10 @@ int main()
             temp = temp->next;
         }
     }
-    cout<<"The linked list is: ";
+    cout << "The linked list is: ";
     display(head);
     head = reverse(head);
-    cout<<"The reversed linked list is: ";
+    cout << "The reversed linked list is: ";
     display(head);
     return 0;
 }
